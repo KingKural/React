@@ -1,5 +1,6 @@
 import HelloWorld from "../../components/helloWorld";
 import HelloWorld2 from "../../components/helloWorld2";
+import Pagination from "../../components/pagination";
 import WriteItDown from "../../components/writeItDown";
 
 function NovaPagina() {
@@ -8,6 +9,7 @@ function NovaPagina() {
         <HelloWorld text="hello"/>
         <WriteItDown />
         <HelloWorld2 />
+        <Pagination />
     </>
 
 }
