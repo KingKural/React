@@ -15,7 +15,7 @@ function Counter() {
         <button onClick={decrease}><b>- 1</b></button>
 
         <br></br><span>{count}</span>
-        <br></br><spam> Times Clicked {clicked}</spam>
+        <br></br><span> Times Clicked {clicked}</span>
 
     </>
 }
