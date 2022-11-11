@@ -1,11 +1,9 @@
-import { useState } from "react";
-
-function HelloWorld() {
-    const [hello, setHello] = useState("Hello, World!");
+function HelloWorld(props) {
+    
 
     return <>
 
-        <h4>{hello}</h4>
+        <b>{props.text}</b><br />
 
     </>
 }
