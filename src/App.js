@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CounterPage from "./pages/Counter/counterPage";
 import ToDo from './pages/toDo/toDoPage';
 import NovaPagina from './pages/novaPagina/novaPagina';
+import ObjectPaginationPage from './pages/ObjectPaginationPage/objectPaginationPage';
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
             <Route path="CounterPage" element={<CounterPage />} />
             <Route path="ToDo" element={<ToDo />} />
             <Route path="NovaPagina" element={<NovaPagina />} />
+            <Route path="ObjectPaginationPage" element={<ObjectPaginationPage/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

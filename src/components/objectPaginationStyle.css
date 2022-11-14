@@ -1,0 +1,30 @@
+.top-menu div {
+    border: 1px solid black;
+        padding: 10px;
+    border-radius: 5px;
+}
+.top-menu div:hover {
+    cursor: pointer;
+
+}
+.top-menu .selected {
+    border-color: blue !important
+}
+
+.top-menu {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.display-info { 
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+.display-info div{
+    border: 1px solid black;
+    width: 350px;
+    text-align: center;
+}

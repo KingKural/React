@@ -10,7 +10,7 @@ function NovaPagina() {
         <WriteItDown />
         <HelloWorld2 />
         <Pagination />
-    </>
+         </>
 
 }
 
