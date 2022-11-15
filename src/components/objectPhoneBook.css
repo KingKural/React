@@ -1,0 +1,27 @@
+.contact-item {
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.contact-item button {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+.wrapper {
+    display: flex;
+    gap: 100px
+}
+
+.left,
+.right {
+    width: 50%
+}
+
+.left input{
+display: flex;
+
+}

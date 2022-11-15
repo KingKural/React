@@ -10,6 +10,8 @@ function Layout() {
             <Link to="/ToDo">To Do</Link>
             <Link to="/NovaPagina">Nova Página</Link>
             <Link to="ObjectPaginationPage">Person Of Interest</Link>
+            <Link to="PhoneBookPage">PhoneBook</Link>
+            <Link to="TablePage">TablePage</Link>
         </nav>
         
         <div className='midle-section'>
@@ -21,6 +23,8 @@ function Layout() {
                 <Link to="/ToDo">To Do</Link><br />
                 <Link to="/NovaPagina">Nova Página</Link><br />
                 <Link to="/ObjectPaginationPage">Person Of Interest</Link><br />
+                <Link to="/PhoneBookPage">PhoneBook</Link><br/>
+                <Link to="/TablePage">TablePage</Link>
             </aside>
 
             <div className="content">

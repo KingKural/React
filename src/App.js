@@ -9,6 +9,8 @@ import CounterPage from "./pages/Counter/counterPage";
 import ToDo from './pages/toDo/toDoPage';
 import NovaPagina from './pages/novaPagina/novaPagina';
 import ObjectPaginationPage from './pages/ObjectPaginationPage/objectPaginationPage';
+import PhoneBookPage from './pages/PhoneBook/PhoneBook';
+import TablePage from './pages/Table/TablePage';
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
             <Route path="ToDo" element={<ToDo />} />
             <Route path="NovaPagina" element={<NovaPagina />} />
             <Route path="ObjectPaginationPage" element={<ObjectPaginationPage/>}/>
+            <Route path="PhoneBookPage" element={<PhoneBookPage/>}/>
+            <Route path="TablePage" element={<TablePage/>}/>
+            
           </Route>
         </Routes>
       </BrowserRouter>
