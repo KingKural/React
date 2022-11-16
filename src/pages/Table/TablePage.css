@@ -1,0 +1,21 @@
+input {
+    margin-left: 2px;
+    width: 124px;
+}
+
+input:placeholder-shown {
+    text-align: center;
+}
+
+div .Registration {
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+div .Registration span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+div .Registration b:hover {
+ cursor: pointer;}

@@ -11,6 +11,7 @@ import NovaPagina from './pages/novaPagina/novaPagina';
 import ObjectPaginationPage from './pages/ObjectPaginationPage/objectPaginationPage';
 import PhoneBookPage from './pages/PhoneBook/PhoneBook';
 import TablePage from './pages/Table/TablePage';
+import WordCounter from './pages/WordCounter/WordCounter';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             <Route path="ObjectPaginationPage" element={<ObjectPaginationPage/>}/>
             <Route path="PhoneBookPage" element={<PhoneBookPage/>}/>
             <Route path="TablePage" element={<TablePage/>}/>
+            <Route path="WordCounter" element={<WordCounter/>}/>
+
             
           </Route>
         </Routes>
