@@ -32,17 +32,24 @@ function ShopCartComponent() {
         if (shoppingRef == "") { setSearchResult([]) }
     }
     function buyThis(i) {
+        setToBuy(SearchResult.splice(i, 1));
+        setMyCart(...myCart.push(toBuy))
 
     }
 
     const removeIt = i => {
         myCart.splice(i, 1);
-        const newList = [...toBuy];
+        const newList = [...myCart];
         setMyCart(newList);
     }
 
     return <>
-        <span>{myCart}</span><br></br>
+        <span>{myCart.map((item, i) =>
+            <div key={i}>
+                {item} <button onClick={() => removeIt(i)}>Remove</button>
+            </div>)}</span><br></br>
+
+
         <input onChange={whatWeGot} ref={shopRef} type="text" placeholder="What you Buying?"></input>
         <span >{SearchResult.map((item, i) =>
             <div key={i}>
