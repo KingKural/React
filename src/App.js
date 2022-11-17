@@ -12,6 +12,7 @@ import ObjectPaginationPage from './pages/ObjectPaginationPage/objectPaginationP
 import PhoneBookPage from './pages/PhoneBook/PhoneBook';
 import TablePage from './pages/Table/TablePage';
 import WordCounter from './pages/WordCounter/WordCounter';
+import ShopCart from './pages/ShopCart/ShopCart';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="PhoneBookPage" element={<PhoneBookPage/>}/>
             <Route path="TablePage" element={<TablePage/>}/>
             <Route path="WordCounter" element={<WordCounter/>}/>
+            <Route path="ShopCart" element={<ShopCart/>}/>
 
             
           </Route>

@@ -13,6 +13,7 @@ function Layout() {
             <Link to="PhoneBookPage">PhoneBook</Link>
             <Link to="TablePage">TablePage</Link>
             <Link to="WordCounter">Word Counter</Link>
+            <Link to="ShopCart">Shop Cart</Link>
         </nav>
         
         <div className='midle-section'>
@@ -27,6 +28,7 @@ function Layout() {
                 <Link to="/PhoneBookPage">PhoneBook</Link><br/>
                 <Link to="/TablePage">TablePage</Link><br/>
                 <Link to="/WordCounter">Word Counter</Link><br/>
+                <Link to="/ShopCart">Shop Cart</Link><br/>
             </aside>
 
             <div className="content">
