@@ -33,6 +33,7 @@ function ShopCartComponent() {
         setSearchResult(results);
         if (shoppingRef == "") { setSearchResult([]) }
     }
+    
     function buyThis(i) {
         setToBuy(SearchResult.splice(i, 1));
         setMyCart(toBuy)
@@ -47,7 +48,7 @@ function ShopCartComponent() {
 
     return <>
         <input ref={input} type='text' placeholder="Make Your List" />
-        <button onClick={mySins}>Confess Ear</button>
+        <button onClick={mySins}>Click Ear</button>
         <br /><span><b>This is Your List!</b></span>
 
         <ul>
