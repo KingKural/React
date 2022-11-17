@@ -9,7 +9,7 @@ function ShopCartComponent() {
     const [toBuy, setToBuy] = useState([])
     const [myCart, setMyCart] = useState([])
 
-    function mySins() {
+    function myShopList() {
         let newTask = input.current.value;
         tasks.push(newTask);
         setTasks([...tasks]);
@@ -35,12 +35,10 @@ function ShopCartComponent() {
     }
     
     function buyThis(i) {
-        setToBuy(SearchResult.splice(i, 1));
-        setMyCart(toBuy)
-
+        
     }
 
-    const removeIt = i => {
+    function  removeIt(i) {
         myCart.splice(i, 1);
         const newList = [...myCart];
         setMyCart(newList);
@@ -48,12 +46,13 @@ function ShopCartComponent() {
 
     return <>
         <input ref={input} type='text' placeholder="Make Your List" />
-        <button onClick={mySins}>Click Ear</button>
+        <button onClick={myShopList}>Click Ear</button>
         <br /><span><b>This is Your List!</b></span>
 
         <ul>
             {tasks.map((task, i) =>
-                <li key={i}><b>{task}</b>
+                <li key={i}>
+                    <b>{task}</b>
 
                 </li>
             )}
