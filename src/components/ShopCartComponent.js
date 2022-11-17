@@ -3,24 +3,19 @@ import "./ShopCartComponent.css"
 
 function ShopCartComponent() {
     const shopRef = useRef();
-    const input = useRef();
+    const listRef = useRef();
     const [tasks, setTasks] = useState([]);
     const [SearchResult, setSearchResult] = useState([])
     const [toBuy, setToBuy] = useState([])
     const [myCart, setMyCart] = useState([])
 
     function myShopList() {
-        let newTask = input.current.value;
+        let newTask = listRef.current.value;
         tasks.push(newTask);
         setTasks([...tasks]);
-        input.current.value = '';
+        listRef.current.value = '';
     }
 
-    const repentSinner = i => {
-        tasks.splice(i, 1);
-        const newList = [...tasks];
-        setTasks(newList);
-    }
 
     function whatWeGot() {
         let results = [];
@@ -33,26 +28,23 @@ function ShopCartComponent() {
         setSearchResult(results);
         if (shoppingRef == "") { setSearchResult([]) }
     }
-    
-    function buyThis(i) {
-        
+
+    function repentSinner (i) {
+        tasks.splice(i, 1);
+        const newList = [...tasks];
+        setTasks(newList);
     }
 
-    function  removeIt(i) {
-        myCart.splice(i, 1);
-        const newList = [...myCart];
-        setMyCart(newList);
-    }
 
     return <>
-        <input ref={input} type='text' placeholder="Make Your List" />
+        <input ref={listRef} type='text' placeholder="Make Your List" />
         <button onClick={myShopList}>Click Ear</button>
         <br /><span><b>This is Your List!</b></span>
 
         <ul>
             {tasks.map((task, i) =>
                 <li key={i}>
-                    <b>{task}</b>
+                    {task} <button onClick={repentSinner}>TakeOut</button>
 
                 </li>
             )}
