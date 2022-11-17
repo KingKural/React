@@ -1,12 +1,15 @@
 .MyShop{
-    
+    display: flex;
+
 }
 
 .sugestionBox {
-    border: 1px solid black;
+    width: 350px;
+    
 }
 
 .ShoppingCart{
-    border: 1px solid black;
-    margin-left: 50px;
+    padding-left: 10px;
+        margin-left: 50px;
+    
 }
