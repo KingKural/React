@@ -7,7 +7,7 @@ function ShopCartComponent() {
     const [tasks, setTasks] = useState([]);
     const [SearchResult, setSearchResult] = useState([])
     const [toBuy, setToBuy] = useState([])
-    const [myCart, setMyCart] = useState(["5% Discount"])
+    const [myCart, setMyCart] = useState([])
 
     function mySins() {
         let newTask = input.current.value;
